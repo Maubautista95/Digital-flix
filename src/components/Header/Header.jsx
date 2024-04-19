@@ -106,11 +106,11 @@ function Header() {
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               
-                <a className="dropdown-item" href="/AccionYAventura">Medios</a>
-                <a className="dropdown-item" href="/Comedia">Géneros</a>
-                <a className="dropdown-item" href="/Misterio">Productoras</a>
-                <a className="dropdown-item" href="/Crimen">Directores</a>                
-                <a className="dropdown-item" href="/Crimen">Tipo(películas o series)</a>
+                <a className="dropdown-item" href="/editar_medios">Medios</a>
+                <a className="dropdown-item" href="/editar_generos">Géneros</a>
+                <a className="dropdown-item" href="/editar_productoras">Productoras</a>
+                <a className="dropdown-item" href="/editar_directores">Directores</a>                
+                <a className="dropdown-item" href="/editar_tipos">Tipo(películas o series)</a>
                 
               </div>
             </li>

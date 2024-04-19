@@ -10,6 +10,8 @@ import Crimen from "./components/Crimen/Crimen";
 import Documental from "./components/Documental/Documental";
 import Drama from "./components/Drama/Drama";
 import Musical from "./components/Musical/Musical";
+import Productoras from "./components/Productoras/Productoras";
+
 import Footer from './components/Footer/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from 'axios'; // Importar Axios
@@ -20,10 +22,17 @@ const GeneralStyles = styled.div`
 
 min-height: 400px;
 background-color: lightblue;
+
 h2{
 padding: 4rem 10vw 2rem 10vw;
 font-size: 2rem;
 }
+
+h3{
+  padding: 1rem 10vw 0 10vw;
+  font-size: 1.75rem;
+  }
+
 `
 
 
@@ -61,6 +70,7 @@ function App() {
           <Route path="/Documental" element={<Documental mediaItems={mediaItems} />} />
           <Route path="/Drama" element={<Drama mediaItems={mediaItems} />} />
           <Route path="/Musical" element={<Musical mediaItems={mediaItems} />} />
+          <Route path="/Productoras" element={<Productoras mediaItems={mediaItems} />} />
 
         </Routes>
       </main>

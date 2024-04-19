@@ -19,6 +19,9 @@ const StyledDivNav = styled.div`
   color: white;
 }
 
+a:hover{
+  color: lightblue;
+}
 
 .nav-item dropdown{
   border-color: #041e49 !important;
@@ -49,8 +52,19 @@ span{
 
 .container{
 
-  gap: 17vw;
+  gap: 50vw;
 }
+
+
+@media(max-width: 415px){
+
+  .container{
+    
+    gap: 10vw;
+  }
+
+}
+
 `;
 
 function Header() {
@@ -85,8 +99,25 @@ function Header() {
                 
               </div>
             </li>
+
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Editar info
+              </a>
+              <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              
+                <a className="dropdown-item" href="/AccionYAventura">Medios</a>
+                <a className="dropdown-item" href="/Comedia">Géneros</a>
+                <a className="dropdown-item" href="/Misterio">Productoras</a>
+                <a className="dropdown-item" href="/Crimen">Directores</a>                
+                <a className="dropdown-item" href="/Crimen">Tipo(películas o series)</a>
+                
+              </div>
+            </li>
+
+
             <li className="nav-item">
-              <a className="nav-link" href="#">Productoras</a>
+              <a className="nav-link" href="/Productoras">Productoras</a>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

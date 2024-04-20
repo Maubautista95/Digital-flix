@@ -49,12 +49,14 @@ h3{
 
 
 function App() {
+
+
   const [mediaItems, setMediaItems] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/mediaitems/getall');
+        const response = await axios.get('https://iudatabase.onrender.com/mediaitems/getall');
         setMediaItems(response.data);
 
       } catch (error) {
@@ -72,7 +74,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/generos/getall');
+        const response = await axios.get('https://iudatabase.onrender.com/generos/getall');
         setGeneroItems(response.data);
 
       } catch (error) {
@@ -88,7 +90,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/productoras/getall');
+        const response = await axios.get('https://iudatabase.onrender.com/productoras/getall');
         setProductoraItems(response.data);
 
       } catch (error) {
@@ -104,7 +106,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/directores/getall');
+        const response = await axios.get('https://iudatabase.onrender.com/directores/getall');
         setDirectorItems(response.data);
 
       } catch (error) {
@@ -120,7 +122,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/tipos/getall');
+        const response = await axios.get('https://iudatabase.onrender.com/tipos/getall');
         setTipoItems(response.data);
 
       } catch (error) {

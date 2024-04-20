@@ -155,7 +155,7 @@ function FormMedia({ mediaItems, generoItems, productoraItems, directorItems, ti
     };
 
 
-
+    console.log(productoraEditar)
 
     return <>
         <h2>Crear nueva película o serie</h2>
@@ -321,53 +321,91 @@ function FormMedia({ mediaItems, generoItems, productoraItems, directorItems, ti
             </div>
             <div className="form-group">
                 <label htmlFor="generoEditar">Género</label>
-                <input
+                <select
                     type="text"
                     className="form-control"
                     id="generoEditar"
                     placeholder="Género"
                     value={generoEditar}
                     onChange={(e) => setGeneroEditar(e.target.value)}
-                />
+                >
+
+                    <option value="">Seleccionar género</option>
+                    {generoItems.map((generoItem) => (
+                        <option key={generoItem._id} value={generoItem._id}>
+                            {generoItem.nombre}
+                        </option>
+                    ))}
+                    </select>
             </div>
             <div className="form-group">
                 <label htmlFor="directorEditar">Director</label>
-                <input
+                <select
                     type="text"
                     className="form-control"
                     id="directorEditar"
                     placeholder="Director"
                     value={directorEditar}
                     onChange={(e) => setDirectorEditar(e.target.value)}
-                />
+                >
+                    <option value="">Seleccionar director</option>
+                    {directorItems.map((directorItem) => (
+                        <option key={directorItem._id} value={directorItem._id}>
+                            {directorItem.nombre}
+                        </option>
+                    ))}
+                
+                </select>
             </div>
+
             <div className="form-group">
                 <label htmlFor="productoraEditar">Productora</label>
-                <input
+                <select
                     type="text"
                     className="form-control"
                     id="productoraEditar"
                     placeholder="Productora"
                     value={productoraEditar}
                     onChange={(e) => setProductoraEditar(e.target.value)}
-                />
+                >
+                    <option value="">Seleccionar productora</option>
+                    {productoraItems.map((productoraItem) => (
+                        <option key={productoraItem._id} value={productoraItem._id}>
+                            {productoraItem.nombre}
+                        </option>
+                    ))}
+
+                </select>
             </div>
+
+
             <div className="form-group">
                 <label htmlFor="tipoEditar">Tipo</label>
-                <input
+                <select
                     type="text"
                     className="form-control"
                     id="tipoEditar"
                     placeholder="Tipo"
                     value={tipoEditar}
                     onChange={(e) => setTipoEditar(e.target.value)}
-                />
+                >
+
+                    {tipoItems.map((tipoItem) => (
+                        <option key={tipoItem._id} value={tipoItem._id}>
+                            {tipoItem.nombre}
+                        </option>
+                    ))}
+
+                </select>
             </div>
             <button type="submit" className="btn btn-primary mb-2">
                 Editar Medio Audiovisual
             </button>
         </form>
     </>
+
+
 }
 
 export default FormMedia;
+

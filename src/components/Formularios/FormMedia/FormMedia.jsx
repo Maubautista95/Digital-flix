@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+
 function FormMedia({ mediaItems, generoItems, productoraItems, directorItems, tipoItems }) {
 
     // Crear media
@@ -158,6 +159,8 @@ function FormMedia({ mediaItems, generoItems, productoraItems, directorItems, ti
     console.log(productoraEditar)
 
     return <>
+
+
         <h2>Crear nueva película o serie</h2>
         <form onSubmit={handleSubmit}>
             <div className="form-group">
@@ -336,7 +339,7 @@ function FormMedia({ mediaItems, generoItems, productoraItems, directorItems, ti
                             {generoItem.nombre}
                         </option>
                     ))}
-                    </select>
+                </select>
             </div>
             <div className="form-group">
                 <label htmlFor="directorEditar">Director</label>
@@ -354,7 +357,7 @@ function FormMedia({ mediaItems, generoItems, productoraItems, directorItems, ti
                             {directorItem.nombre}
                         </option>
                     ))}
-                
+
                 </select>
             </div>
 
@@ -389,7 +392,7 @@ function FormMedia({ mediaItems, generoItems, productoraItems, directorItems, ti
                     value={tipoEditar}
                     onChange={(e) => setTipoEditar(e.target.value)}
                 >
-
+                    <option value="">Seleccionar tipo del medio</option>
                     {tipoItems.map((tipoItem) => (
                         <option key={tipoItem._id} value={tipoItem._id}>
                             {tipoItem.nombre}

@@ -72,7 +72,7 @@ function MediaPresentation({ data }) {
         <h3>{dataItem.titulo}</h3>
         <span>{dataItem.tipo.nombre}</span><br></br>
         <span>Género: {dataItem.generoPrincipal.nombre}</span>
-        
+         
       </a>
     </StyledMediaItem>
   ));

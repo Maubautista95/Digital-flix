@@ -149,7 +149,11 @@ function App() {
           <Route path="/Drama" element={<Drama mediaItems={mediaItems} />} />
           <Route path="/Musical" element={<Musical mediaItems={mediaItems} />} />
           <Route path="/Productoras" element={<Productoras mediaItems={mediaItems} />} />
-          <Route path="/editar_medios" element={<FormMedia mediaItems={mediaItems} />} />
+          <Route path="/editar_medios" element={<FormMedia mediaItems={mediaItems}
+            generoItems={generoItems} 
+            productoraItems={productoraItems} 
+            directorItems={directorItems} 
+            tipoItems={tipoItems}/>} />
           <Route path="/editar_generos" element={<FormGeneros mediaItems={mediaItems} generoItems={generoItems}/>} />
           <Route path="/editar_productoras" element={<FormProductoras mediaItems={mediaItems} productoraItems={productoraItems}/>} />
           <Route path="/editar_directores" element={<FormDirectores mediaItems={mediaItems} directorItems={directorItems}/>} />

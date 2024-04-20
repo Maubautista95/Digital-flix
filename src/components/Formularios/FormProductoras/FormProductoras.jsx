@@ -28,7 +28,7 @@ const StyledTable = styled.table`
 function FormProductoras({ productoraItems }) {
 
     const [nombreCrear, setNombreCrear] = useState("");
-    const [estadoCrear, setEstadoCrear] = useState("Activo"); // Valor predeterminado 'Activo'
+    const [estadoCrear, setEstadoCrear] = useState("Activo"); 
     const [sloganCrear, setSloganCrear] = useState("");
     const [descripcionCrear, setDescripcionCrear] = useState("");
 
@@ -128,6 +128,8 @@ function FormProductoras({ productoraItems }) {
             console.error("Error de red:", error);
         }
     };
+
+    //Editar
 
     return <>
         <h2>Todas las productoras</h2>

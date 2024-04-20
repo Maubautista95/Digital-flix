@@ -110,7 +110,7 @@ function Header() {
                 <a className="dropdown-item" href="/editar_generos">Géneros</a>
                 <a className="dropdown-item" href="/editar_productoras">Productoras</a>
                 <a className="dropdown-item" href="/editar_directores">Directores</a>                
-                <a className="dropdown-item" href="/editar_tipos">Tipo(películas o series)</a>
+                <a className="dropdown-item" href="/editar_tipos">Tipo (películas o series)</a>
                 
               </div>
             </li>

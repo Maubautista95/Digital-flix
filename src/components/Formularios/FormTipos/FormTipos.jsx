@@ -39,7 +39,7 @@ function FormTipos({ tipoItems }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:4000/tipos/post", {
+            const response = await fetch("https://iudatabase.onrender.com/tipos/post", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -63,7 +63,7 @@ function FormTipos({ tipoItems }) {
         e.preventDefault();
         try {
             const response = await fetch(
-                `http://localhost:4000/tipos/delete/${tipoABorrar}`,
+                `https://iudatabase.onrender.com/tipos/delete/${tipoABorrar}`,
                 {
                     method: "DELETE",
                     headers: {
@@ -101,7 +101,7 @@ function FormTipos({ tipoItems }) {
         e.preventDefault();
         try {
             const response = await fetch(
-                `http://localhost:4000/tipos/update/${tipoAEditar}`,
+                `https://iudatabase.onrender.com/tipos/update/${tipoAEditar}`,
                 {
                     method: "PATCH",
                     headers: {

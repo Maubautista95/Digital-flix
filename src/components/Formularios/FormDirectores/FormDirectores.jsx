@@ -37,7 +37,7 @@ function FormDirectores({ directorItems }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:4000/directores/post", {
+            const response = await fetch("https://iudatabase.onrender.com/directores/post", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -62,7 +62,7 @@ function FormDirectores({ directorItems }) {
         e.preventDefault();
         try {
             const response = await fetch(
-                `http://localhost:4000/directores/delete/${directorABorrar}`,
+                `https://iudatabase.onrender.com/directores/delete/${directorABorrar}`,
                 {
                     method: "DELETE",
                     headers: {
@@ -99,7 +99,7 @@ function FormDirectores({ directorItems }) {
         e.preventDefault();
         try {
             const response = await fetch(
-                `http://localhost:4000/directores/update/${directorAEditar}`,
+                `https://iudatabase.onrender.com/directores/update/${directorAEditar}`,
                 {
                     method: "PATCH",
                     headers: {

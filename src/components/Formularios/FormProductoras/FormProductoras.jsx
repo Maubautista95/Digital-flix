@@ -42,7 +42,7 @@ function FormProductoras({ productoraItems }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:4000/productoras/post", {
+            const response = await fetch("https://iudatabase.onrender.com/productoras/post", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -66,7 +66,7 @@ function FormProductoras({ productoraItems }) {
         e.preventDefault();
         try {
             const response = await fetch(
-                `http://localhost:4000/productoras/delete/${productoraABorrar}`,
+                `https://iudatabase.onrender.com/productoras/delete/${productoraABorrar}`,
                 {
                     method: "DELETE",
                     headers: {
@@ -108,7 +108,7 @@ function FormProductoras({ productoraItems }) {
         e.preventDefault();
         try {
             const response = await fetch(
-                `http://localhost:4000/productoras/update/${productoraAEditar}`,
+                `https://iudatabase.onrender.com/productoras/update/${productoraAEditar}`,
                 {
                     method: "PATCH",
                     headers: {

@@ -37,7 +37,7 @@ function FormGeneros({ generoItems }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:4000/generos/post", {
+            const response = await fetch("https://iudatabase.onrender.com/generos/post", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -62,7 +62,7 @@ function FormGeneros({ generoItems }) {
         e.preventDefault();
         try {
             const response = await fetch(
-                `http://localhost:4000/generos/delete/${generoABorrar}`,
+                `https://iudatabase.onrender.com/generos/delete/${generoABorrar}`,
                 {
                     method: "DELETE",
                     headers: {
@@ -99,7 +99,7 @@ function FormGeneros({ generoItems }) {
         e.preventDefault();
         try {
             const response = await fetch(
-                `http://localhost:4000/generos/update/${generoAEditar}`,
+                `https://iudatabase.onrender.com/generos/update/${generoAEditar}`,
                 {
                     method: "PATCH",
                     headers: {

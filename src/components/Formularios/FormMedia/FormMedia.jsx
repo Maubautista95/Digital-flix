@@ -22,7 +22,7 @@ function FormMedia({ mediaItems, generoItems, productoraItems, directorItems, ti
             return;
         }
         try {
-            const response = await fetch("http://localhost:4000/mediaitems/post", {
+            const response = await fetch("https://iudatabase.onrender.com/mediaitems/post", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -57,7 +57,7 @@ function FormMedia({ mediaItems, generoItems, productoraItems, directorItems, ti
         e.preventDefault();
         try {
             const response = await fetch(
-                `http://localhost:4000/mediaItems/delete/${mediaABorrar}`,
+                `https://iudatabase.onrender.com/mediaItems/delete/${mediaABorrar}`,
                 {
                     method: "DELETE",
                     headers: {
@@ -124,7 +124,7 @@ function FormMedia({ mediaItems, generoItems, productoraItems, directorItems, ti
         e.preventDefault();
         try {
             const response = await fetch(
-                `http://localhost:4000/mediaItems/update/${mediaAEditar}`,
+                `https://iudatabase.onrender.com/mediaItems/update/${mediaAEditar}`,
                 {
                     method: "PATCH",
                     headers: {
